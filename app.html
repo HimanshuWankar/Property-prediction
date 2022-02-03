@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <meta name="author" content="Himanshu Wankar">
+    <meta name="copyright" content="Himanshu Wankar">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" type="image/png" href="fav.ico.png" />
+    <script src="https://kit.fontawesome.com/7179336733.js" crossorigin="anonymous"></script>
+    
+  
+</head>
+
+<!-- START NAV -->
+
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- END NAV -->
+
+<!-- START WELCOME SECTION -->
+
+<section id="welcome-section" class="welcome-section">
+  <h1>Hey I am Himanshu wankar</h1>
+  <p>A Data Science Enthusiast ! </p>
+  <br>
+  <br>
+  <p>"This System Predicts the price of property(house) bases on certain parameters this 
+    is achieved by data analysis, data cleaning, feature engineering, dimensionality reduction,
+    outlire removal using business logic after this process building machine learning model by 
+    using one hot encoding,using k fold cross validation to measure accuracy of linear regression model,
+     finally finding the best model using GridSearchCV ,Testing the model and building a flask server over
+      that model and then finally building a basic website to handel all the client process"</p>
+</section>
+
+<!-- END WELCOME SECTION -->
+
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">WELCOME TO PROPERTY PRICE PREDICTION SYSTEMS </h2>
+<center>
+  <h2>Area (Square Feet)</h2>
+  <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+  <br>
+  <h2>BHK</h2>
+  <div class="switch-field">
+      <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+      <label for="radio-bhk-1">1</label>
+      <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+      <label for="radio-bhk-2">2</label>
+      <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+      <label for="radio-bhk-3">3</label>
+      <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+      <label for="radio-bhk-4">4</label>
+      <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+      <label for="radio-bhk-5">5</label>
+  </div>
+  </form>
+  <br>
+<form class="form">
+  <h2>Bath</h2>
+  <div class="switch-field">
+      <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+      <label for="radio-bath-1">1</label>
+      <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+      <label for="radio-bath-2">2</label>
+      <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+      <label for="radio-bath-3">3</label>
+      <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+      <label for="radio-bath-4">4</label>
+      <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+      <label for="radio-bath-5">5</label>
+  </div>
+  <br>
+      <h2>Location</h2>
+  <div>
+<select class="location" name="" id="uiLocations">
+  <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+      <option>Electronic City</option>
+      <option>Rajaji Nagar</option>
+</select>
+</div>
+  <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+  <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+  
+ 
+</section>
+</center>
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+    <p>How do you take your coffee?</p>
+  </div>
+  <div class="contact-links">
+   
+    <a
+      id="profile-link"
+      href="https://github.com/HimanshuWankar"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="https://twitter.com/himanshu_wankar"
+      class="btn contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a href="mailto:wankarhimanshu99@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send a mail</a
+    >
+    <a href="tel:8010038906" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call me</a
+    >
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+  <p>
+    <p class="bottom">© Made with Love 💕 by <span class="social"><a href=""><strong>
+      Himanshu Wankar </strong> <i class="fas fa-external-link-alt"></i></a></span></p>
+  </p>
+ 
+</footer>
+
+<!-- END FOOTER SECTION -->
